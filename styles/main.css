@@ -1,7 +1,8 @@
-h1 {
-  margin: auto;
+h1, h3 {
+  text-align: center;
 }
 
 .container {
   background-color: lightblue;
+  margin-right: 350px;
 }
