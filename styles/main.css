@@ -12,7 +12,7 @@ footer {
   background-color: lightblue;
 }
 
-#headbar {
+.headbar {
   background-color: rgb(253, 207, 0);
   padding-bottom: 25px;
   box-shadow: 20px;
