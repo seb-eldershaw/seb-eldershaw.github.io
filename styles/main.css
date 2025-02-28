@@ -2,10 +2,9 @@
   text-align: center;
 }
 
-footer {
-  background-color: slategray;
+h1 {
+  font-family: cursive;
   text-align: center;
-  padding: 10px;
 }
 
 .container {
@@ -21,4 +20,15 @@ footer {
 #sidebar {
   width: 125px;
   height: 150px;
+}
+
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: slategrey;
+  padding: 10px;
 }
