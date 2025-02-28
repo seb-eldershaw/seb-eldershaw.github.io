@@ -1,4 +1,4 @@
-h1, h3 {
+.center {
   text-align: center;
 }
 
@@ -10,5 +10,15 @@ footer {
 
 .container {
   background-color: lightblue;
-  margin-right: 350px;
+}
+
+#headbar {
+  background-color: rgb(253, 207, 0);
+  padding-bottom: 25px;
+  box-shadow: 20px;
+  text-align: center; 
+}
+#sidebar {
+  width: 125px;
+  height: 150px;
 }
