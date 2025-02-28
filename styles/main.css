@@ -2,6 +2,12 @@ h1, h3 {
   text-align: center;
 }
 
+footer {
+  background-color: slategray;
+  text-align: center;
+  padding: 10px;
+}
+
 .container {
   background-color: lightblue;
   margin-right: 350px;
