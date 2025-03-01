@@ -14,7 +14,7 @@ h1 {
 
 .headbar {
   background-color: rgb(253, 207, 0);
-  padding-bottom: 25px;
+  padding: 25px;
   text-align: center; 
 }
 #sidebar {
@@ -33,9 +33,9 @@ footer {
   padding: 20px;
 }
 
-@media only screen and (max-width: 100px) {
+@media (max-width: 600px) {
   .headbar {
     padding-bottom: 40px;
-    font-size: 150%;
+    font-size: 1.2rem;
   }
 }
