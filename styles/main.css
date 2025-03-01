@@ -11,10 +11,10 @@ h1 {
   background-color: lightblue;
 }
 
+
 .headbar {
   background-color: rgb(253, 207, 0);
   padding-bottom: 25px;
-  box-shadow: 20px;
   text-align: center; 
 }
 #sidebar {
@@ -31,4 +31,11 @@ footer {
   text-align: center;
   background-color: slategrey;
   padding: 20px;
+}
+
+@media only screen and (max-width: 100px) {
+  .headbar {
+    padding-bottom: 40px;
+    font-size: 150%;
+  }
 }
