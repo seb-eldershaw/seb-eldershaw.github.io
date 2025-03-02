@@ -8,12 +8,15 @@ h1 {
 }
 
 .container {
-  background-color: lightblue;
+  background-color: #0eb1d2;
 }
 
+body {
+  background-color: #F0F3BD;
+}
 
 .headbar {
-  background-color: rgb(253, 207, 0);
+  background-color: #DA7422;
   padding: 25px;
   text-align: center; 
 }
@@ -40,7 +43,7 @@ footer {
   bottom: 0px;
   width: 100%;
   text-align: center;
-  background-color: slategrey;
+  background-color: #605F5E;
   padding: 20px;
 }
 
