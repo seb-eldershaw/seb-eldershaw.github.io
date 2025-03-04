@@ -38,12 +38,11 @@ body {
 }
 
 footer {
-  position: absolute;
   left: 0px;
   bottom: 0px;
   width: 100%;
   text-align: center;
-  background-color: #605F5E;
+  background-color: #adadad;
   padding: 20px;
 }
 
