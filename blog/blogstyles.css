@@ -42,10 +42,10 @@ body {
 .fixed {
   position: fixed;
   padding: 10px;
-  width: 200px;
+  width: 250px;
   background-color: yellow;
-  right: 30px;
-  top: 500px;
+  right: 20px;
+  top: 250px;
 }
 
 #greenbox {
