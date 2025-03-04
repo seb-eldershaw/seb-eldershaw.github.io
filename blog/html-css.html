@@ -9,20 +9,31 @@
   </style>
   <body>
     <h1 class="headbar">Element positioning types in HTML</h1>
-    <p>There are three main ways to position elements in HTML, namely, Relative, Absolute, and Fixed.</p>
+    <p>There are three main ways to position elements in HTML, namely, Relative, Absolute, and Fixed. Note that elements will
+      overlap other elements, in order of definition.
+    </p>
     <div class="relative">
     <h4>Relative Positioning</h4>
-    <p>An element that uses relative
-    positioning starts at its default position, and can then be moved from there
+    <p>An element that uses relative positioning starts at its default position, and can then be moved from there
   by entering top, bottom, left, and right values. Here, this blue box
 is moved 20 pixels to the left, and 10 pixels down.</p>
   </div>
-  <div class="absolute">
-    <h4>Absolute Positioning</h4>
-    <p></p>
-  </div>  
+  <div id="greenbox">
+    <div class="absolute">  
+     <h4>Absolute Positioning</h4>
+     <p>An element that uses absolute positioning is positioned relative to the parent
+      element that it is part of. If the element does not have a parent element,
+      then it defaults to the page element. This red box is positioned 50 pixels
+      right from its normal position in the green box. 
+      </p>
+    </div>  
+  </div>
+  <div class="fixed">
+    <h4>Fixed Positioning</h4>
+    <p>An element that uses fixed positioning always stays in the same position,
+      relative to the viewport. This means that wherever it is placed on the screen, it will stay there,
+      even if the page is scrolled.
+    </p>
+  </div>
   </body>
-  <footer>
-
-  </footer>
 </html>
