@@ -52,6 +52,7 @@ body {
   position: relative;
   width: 300px;
   height: 300px;
+  left: 300px;
   background-color: rgb(0, 192, 0);
 }
 
