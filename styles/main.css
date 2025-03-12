@@ -46,7 +46,7 @@ footer {
   padding: 10px;
 }
 
-@media (max-width: 332px) {
+@media (max-width: 400px) {
   .headbar {
     font-size: 1.2rem;
   }
