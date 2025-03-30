@@ -9,13 +9,19 @@ h1 {
 
 .container {
   background-color: #99ffff;
+  margin-top: 15px;
+  margin-left: 75px;
+  margin-right: 75px;
   width: 400;
   padding: 20px;
   border-radius: 4%;
 }
 
 body {
-  background-color: #F0F3BD;
+  background-image: url(/images/IMG_6139.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0px;
 }
 
 .headbar {

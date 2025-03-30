@@ -12,7 +12,10 @@ h1 {
 }
 
 body {
-  background-color: #F0F3BD;
+  background-image: url(/images/IMG_6139.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0px;
 }
 
 .headbar {
@@ -23,6 +26,7 @@ body {
 #sidebar {
   width: 200px;
   height: 400px;
+  padding: 10px;
 }
 
 #pfp {
