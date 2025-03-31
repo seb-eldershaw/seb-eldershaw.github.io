@@ -23,22 +23,27 @@ body {
   padding: 25px;
   text-align: center; 
 }
+
 #sidebar {
   width: 200px;
   height: 400px;
   padding: 10px;
 }
 
-#pfp {
+#introduction {
   position: absolute;
   top: 136px;
-  right: 10px;
+  right:10px;
+  background-color: #99e8f8;
+  width: 140px;
 }
 
-#intro {
-  position: absolute;
-  top: 250px;
-  right: 10px;
+#pfp {
+  margin: 7px;
+}
+
+#intro-text {
+  margin: 5px;
 }
 
 footer {
