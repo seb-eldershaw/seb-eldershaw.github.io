@@ -1,22 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="blogstyles.css" rel="stylesheet" type="text/css">
-        <title>HTML Template</title>
-    </head>
-    <body>
-        <header class="headbar">JavaScript DOM</header>
-        <div class="container">
-        <h3>- The JavaScript DOM -</h3>
-        <p>What is the DOM? DOM stands for Document Object Model, and is a representation of the HTML that makes up a webpage. What makes the DOM special is that it allows the webpage to be modified using JavaScript. Without the DOM, JavaScript has no idea about webpages, elements, or styles. A browser uses JavaScript to make changes to a webpage, and the DOM is the part that shows those changes, which is why the DOM often looks different to the original HTML used to make the webpage.</p>
-        <h4>- Control Flow -</h4>
-        <p></p>
-        <h4>- Functions -</h4>
-        </div>
-      </body>
-    <footer>
-      <a href="/index.html"><img src="/images/HomeButton.png" alt="home button" width="50px" height: auto></a>
-    </footer>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="blogstyles.css" rel="stylesheet" type="text/css">
+  <title>HTML Template</title>
+</head>
+
+<body>
+  <header class="headbar">JavaScript DOM</header>
+  <div class="container">
+    <h3 class="center">- JavaScript and the DOM -</h3>
+    <h4 class="center"> - JavaScript -</h4>
+    <p>While HTML is the main building blocks of a webpage, and CSS is the styling, JavaScript is the functionality of a
+      webpage. HTML is like a builder, who makes the structure of a house, CSS is the painter and decorator, who puts
+      pretty colours on the walls, and JavaScript is like the plumber, or electrician, who makes the pipes and switches
+      actually do things. Using JavaScript, we can make changes to a webpage as the user interacts with it, or play
+      animations, and other interactive features. These changes are made in the DOM. </p>
+    <h4>What is the DOM?</h4>
+    <p>DOM stands for Document Object Model, and is a representation of the HTML that makes up a webpage. What makes the
+      DOM special is that it allows the webpage to be modified using JavaScript. Without the DOM, JavaScript has no idea
+      about webpages, elements, or styles. A browser uses JavaScript to make changes to an existing webpage, and the DOM
+      is the part that shows those changes, which is why the DOM often looks different to the original HTML used to make
+      the webpage. For example, you could have an empty paragraph element, which you want to change, depending on
+      whether or not the user has submitted a form. In the .html file, you would create the paragraph element, like
+      this: </p>
+
+    <code>
+      &lt;p id=&quot;formStatus&quot;&gt;&lt;/p&gt;
+    </code>
+    <p>Then in the .js file, you need to be able to access that particular paragraph element, so you use this line of
+      code: </p>
+    <code>
+      document.getElementByID(&#39;formStatus&#39;)
+    </code>
+    <p>What this line does is use the .getElementByID() to look through the document object, which is the .html
+      page, for an element with the ID of 'formStatus'. Now that we have told JavaScript what element we're looking for,
+      we can make whatever changes to it we like. Here, we want to change the text in the &lt;p&gt; tag, which is
+      kept in its .innerHTML object. We first get the element from the .html, then go into it's .innerHTML object, and
+      then set it to the text we'd like.</p>
+    <code>
+        document.getElementByID(&#39;formStatus&#39;).innerHTML = &#39;Thank you for submitting the form!&#39;
+      </code>
+    <p>Now we can link it to a function, so the text only changes if the user submits the form. If we look back at the
+      HTML, we can't see the change though, and our &lt;p&gt; tag is stll empty, because JavaScript actually changed the
+      DOM, rahter than the HTML. If we look at our file in a browser, we can see the change, because the browser is
+      actually displaying the DOM, rather than the HTML.</p>
+    <h4 class="center">- Control Flow -</h4>
+    <p>Control flow is how the computer reads through the code and runs it. Starting from the top, and working down
+      through the file, the computer will look at each line of code, ignoring any comments.</p>
+    <code>
+      // Comments look like this //
+    </code>
+    <p>When the computer looks at functions, it will just note them, and carry on, not running them until they are
+      called. If the code contains a loop, the computer will run through the loop, go back up to the top of the loop,
+      and run it again, and will continue to do so until the condition for the loop to end occurs. It's important to
+      note that if there is no end condition for a loop, the computer will be stuck running it forever, and you'll most
+      likely crash your browser. It's not the end of the world, but it's still pretty annoying! </p>
+    <h4 class="center">- Functions -</h4>
+    <p>Functions are reusable sections of code that are first defined, which means that the stuff you want the function
+      to do is put inside, and then called to make it run that stuff.
+      Functions look like this:
+    </p>
+    <pre>
+      <code>
+        function functionName(input variables) {
+          // code stuff //
+        }
+      </code>
+    </pre>
+    <p>To actually get your function to do something, you have to 'call' it. Calling a function tells the computer to
+      look back through the code to the place where the function was defined, and to run it. Calling a function looks
+      like this:</p>
+    <pre>
+      <code>
+        functionName(some-input)
+      </code>
+    </pre>
+    <p>The name of the function is arbitrary, but it's a good practice to call your functions something that describes
+      what they do, so you, or others who are working on the same code, can easily see what is happening. What makes
+      functions so useful is if you want to use the same code multiple times, you only need to write it once, and then
+      whenever you need to use it, you can just call the function, rather than writing it all out again. <br> Also, if
+      at some point you want to make changes, you only have to change the function's definition, rather than going
+      through your code and changing all the repeated code. </p>
+    <h3 class="center">- Arrays vs. Objects -</h3>
+    <p>Arrays and objects are both ways of storing data in JS. Each can contain any number of items, but there are a few
+      key differences to be aware of. Arrays
+      use square brackets, and are used to storie lists of data where the order of each item is important. Items in
+      arrays each have an index value, which starts at 0. Elements in an array can be accessed by using bracket
+      notation. This code will access the first item in the array. </p>
+    <pre>
+      <code>
+      let arayName = [1, 2, 3, 4];
+      arrayName[0]
+      </code>
+    </pre>
+    <p>Objects are used to store data items, where each items has a set of attributes, called properties, and are
+      unordered. Each item is
+      stored as a key-value pair, and has a name, which is the key, and then a number of properties, which are the
+      values. If you were making an online shop, you would use an object, with each product the shop sells being an item
+      in the object, and the product name is the key, and the price and stock would be the values.</p>
+    <pre>
+      <code>
+        let products = {
+          productOne: {
+            price: 5,
+            stock: 100
+          },
+
+          productTwo: {
+            price: 3,
+            stock: 100
+          }
+        }
+      </code>
+    </pre>
+    <p>To retreive the properties from an item in an object, you can use either dot notation, for example, if we wanted
+      to get the price of product one, we would use this line: </p>
+    <pre>
+      <code>
+        productOne.price
+      </code>
+    </pre>
+    <p>Arrays are best used to store a list of ordered items, and objects are best used to store unordered items with
+      properties.</p>
+  </div>
+</body>
+<footer>
+  <a href="/index.html"><img src="/images/HomeButton.png" alt="home button" width="50px" height: auto></a>
+</footer>
+
 </html>
