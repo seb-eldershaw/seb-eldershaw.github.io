@@ -19,9 +19,9 @@ body {
 }
 
 .headbar {
-  background-color: #DA7422;
+  background-color: #da7422;
   padding: 25px;
-  text-align: center; 
+  text-align: center;
 }
 
 #sidebar {
@@ -33,7 +33,7 @@ body {
 #introduction {
   position: absolute;
   top: 136px;
-  right:10px;
+  right: 10px;
   background-color: #99e8f8;
   width: 140px;
 }
